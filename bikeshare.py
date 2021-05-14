@@ -10,7 +10,7 @@ day_data = ['all', 'monday', 'tuesday', 'wednesday','thursday', 'friday', 'satur
 
 def get_filters():
     """
-    Asks user to specify a city, month, and day to analyze.
+    Asks users to specify a city, month, and day to analyze.
     Returns:
         (str) city - name of the city to analyze
         (str) month - name of the month to filter by, or "all" to apply no month filter
@@ -35,7 +35,7 @@ def get_filters():
     #get user input for month (all, january, february, ... , june)
     month_name = ''
     while month_name.lower() not in month_data:
-            month_name = input("\n For which month would you like to view data? (E.g. Input either 'all' to apply no month filter or enter a month from January to June months)\n")
+            month_name = input("\n For which month would you like to view data? (E.g. Input Either 'all' to apply no month filter or enter a month from January to June months)\n")
             if month_name.lower() in month_data:
                 #We were able to get the name of the month to analyze data.
                 month = month_name.lower()
@@ -159,11 +159,11 @@ def trip_duration_stats(df):
 
     #display total travel time
     total_travel_time = df['Trip Duration'].sum()
-    print("The total travel time from the given data is " + str(total_travel_time) + ' seconds.')
+    print("The total travel time from the given data is as" + str(total_travel_time) + ' seconds.')
 
     #display mean travel time
     mean_travel_time = df['Trip Duration'].mean()
-    print("The mean travel time from the given data is " + str(mean_travel_time) + ' seconds.')
+    print("The mean travel time from the given data is as" + str(mean_travel_time) + ' seconds.')
 
     print("\nThese 2 calculations took %s seconds." % (time.time() - start_time))
     print('-'*40)
