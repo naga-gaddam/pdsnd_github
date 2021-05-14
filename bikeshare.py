@@ -118,7 +118,7 @@ def time_stats(df):
     common_start_hour = df['hour'].mode()[0]
     print("The most common start hour from the given filtered data is: " + str(common_start_hour) + '\'o clock')
 
-    print("\nThese 3 calculations took %s seconds." % (time.time() - start_time))
+    print("\nThese 3 calculations took around %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 
