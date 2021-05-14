@@ -16,7 +16,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bike share data!')
+    print('Helloo! Let\'s explore some US bike share data!')
     #get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city_choice = ''
     while city_choice.lower() not in source_data:
@@ -118,7 +118,7 @@ def time_stats(df):
     common_start_hour = df['hour'].mode()[0]
     print("The most common start hour from the given filtered data is: " + str(common_start_hour) + '\'o clock')
 
-    print("\nThese 3 calculations took %s seconds." % (time.time() - start_time))
+    print("\nThese 3 calculations took around %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 
